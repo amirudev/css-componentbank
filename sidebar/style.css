@@ -35,7 +35,15 @@ a {
     font-size: 40px;
     border: none;
     background-color: transparent;
-    padding: 15px 30px;
+    padding: 0px 45px 10px 25px;
+}
+
+.sidebar-close:hover {
+    background-color: #aaaaaa;
+}
+
+.sidebar-open:hover {
+    background-color: #aaaaaa;
 }
 
 .item:hover {

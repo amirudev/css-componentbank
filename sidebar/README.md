@@ -9,4 +9,4 @@ X Animation
 Name : Wahyu Amirulloh
 GitHub : https://github.com/wahyuamirulloh
 Facebook : Wahyu Amirulloh
-Twitter : @wahyu-amirulloh
+Twitter : @wahyu_amirulloh
