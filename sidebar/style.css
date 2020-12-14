@@ -9,6 +9,8 @@ body {
     position: fixed !important;
     box-shadow: #606060 1px 1px 10px;
     z-index: 10;
+    left: 0;
+    transition: 0.5s;
 }
 
 .item {
@@ -29,7 +31,7 @@ a {
 }
 
 .sidebar-open {
-    display: none;
+    position: relative;
     width: 70px;
     height: 70px;
     font-size: 40px;
