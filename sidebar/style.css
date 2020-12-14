@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.sidebar {
+    float: left;
+    width: 200px;
+    height: 100%;
+    position: fixed !important;
+    box-shadow: #606060 1px 1px 10px;
+    z-index: 10;
+}
+
+.item {
+    padding: 15px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-close {
+    /* position: absolute; */
+    background-color: white;
+    width: 200px;
+    height: 70px;
+    border: none;
+}
+
+.sidebar-open {
+    display: none;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 15px 30px;
+}
+
+.item:hover {
+    background-color: grey;
+}
