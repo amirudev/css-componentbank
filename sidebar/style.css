@@ -4,17 +4,22 @@ body {
 
 .sidebar {
     float: left;
-    width: 200px;
+    width: 300px;
     height: 100%;
     position: fixed !important;
     box-shadow: #606060 1px 1px 10px;
     z-index: 10;
     left: 0;
     transition: 0.5s;
+    padding-top: 50px;
 }
 
 .item {
     padding: 15px 30px;
+}
+
+.item span {
+    float: right;
 }
 
 a {
@@ -23,11 +28,13 @@ a {
 }
 
 .sidebar-close {
-    /* position: absolute; */
+    position: absolute;
     background-color: white;
-    width: 200px;
+    width: 70px;
     height: 70px;
-    border: none;
+    left: 320px;
+    top: 20px;
+    border-radius: 90px;
 }
 
 .sidebar-open {
@@ -38,6 +45,7 @@ a {
     border: none;
     background-color: transparent;
     padding: 0px 45px 10px 25px;
+    display: none;
 }
 
 .sidebar-close:hover {
@@ -50,4 +58,12 @@ a {
 
 .item:hover {
     background-color: grey;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown-item {
+    padding-left: 75px;
 }
