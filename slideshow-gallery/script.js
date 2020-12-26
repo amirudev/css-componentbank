@@ -1,17 +1,42 @@
 const imageArray = [
-    'images/dummyimages1.png',
-    'images/dummyimages2.png',
-    'images/dummyimages3.png'
+    'dummyimage1.png',
+    'dummyimage2.png',
+    'dummyimage3.png'
 ]
 
-var currentImages = imageArray[0];
+var currentImage = 0
+
+updateImage = () => {
+    var linkCurrentImage = `images/${imageArray[currentImage]}`;
+    document.getElementById('image-container').src = linkCurrentImage;
+    console.log(linkCurrentImage);
+    console.log(currentImage);
+}
+
+updateCurrentNumber = (oper) => {
+    if(oper == "sum") {
+        if(currentImage < imageArray.length - 1) {
+            currentImage++;
+        } else {
+            currentImage = 0;
+        }
+    } else {
+        if(currentImage > 0) {
+            currentImage--;
+        } else {
+            currentImage = imageArray.length - 1;
+        }
+    }
+}
 
 document.getElementById('previmage').addEventListener('click', () => {
-
+    updateCurrentNumber("min")
+    updateImage();
 });
 
-document.getElementById('previmage').addEventListener('click', () => {
-
+document.getElementById('nextimage').addEventListener('click', () => {
+    updateCurrentNumber("sum")
+    updateImage();
 });
 
-document.getElementById('image-container').src = currentImages;
+updateImage();
