@@ -26,6 +26,10 @@ li {
 
 a {
     text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+
+a:hover {
     color: black;
 }
 
@@ -36,3 +40,6 @@ i {
     vertical-align: sub;
 }
 
+i:hover {
+    color: black;
+}
